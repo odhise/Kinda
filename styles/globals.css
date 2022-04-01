@@ -1,16 +1,56 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.discounts{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: .4em 0;
+  color:white;
+  background-color:black;
+}
+.discounts p{
+  padding-right: 5em;
+}
+.nav-container{
+  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3em;
+
+}
+ .nav-container h1{
+  align-items: center;
+}
+span{
+  color: white;
+}
+strong{
+  color: red;
+}
+ .nav-content{
+  display: flex;
+  justify-content:space-between;
+  gap: 1em;
+
+}
+.btn1{
+  padding: 1em 2em;
+  background-color: #000000;
+  color: white;
+}
+.btn2{
+  color: white;
+  background-color: red;
+  padding: 1em 2em;
+  
+}
+.btn3{
+  color:white;
+  background-color: #000000;
+  padding: 1em 2em;
 }
