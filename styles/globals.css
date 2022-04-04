@@ -16,7 +16,7 @@
   padding-right: 5em;
 }
 .nav-container{
-  background-color: teal;
+  background-color: #42B83A;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,15 +42,95 @@ strong{
   padding: 1em 2em;
   background-color: #000000;
   color: white;
+  border-radius: .5em;
+  margin: .8em 0;
+
 }
 .btn2{
   color: white;
   background-color: red;
   padding: 1em 2em;
+  border-radius: .5em;
+  margin: .8em 0;
+
   
 }
 .btn3{
   color:white;
   background-color: #000000;
   padding: 1em 2em;
+  border-radius: .5em;
+  margin: .8em 0;
+
+
+}
+.container1{
+  display: flex;
+  flex-direction: column;
+  background-color: black; 
+  color: white;  
+  padding: 2em 0;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.homee{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.home-address{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid teal  2px;
+  border-radius: 2px;
+  background-color: white;
+
+}
+
+.home-address input{
+  width: 180px;
+  padding: 1.5em 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.home-address input:focus{
+  outline: none;
+}
+.find{
+  color: red;
+}
+.form input{
+  width: 550px;
+  color: #AFDDF7;
+  padding: 1.5em 0;
+  border: none;
+}
+.form{
+  background-color: white;
+  display: flex;
+  border: 2px  solid  lightseagreen;
+  align-items: center;
+  border-radius: 5px;
+
+}
+.form input:focus{
+  outline: none;
+}
+.form-icon{
+  color: #61C55F;
+}
+.hero-section{
+  display: flex;
+  margin: 2em 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-left{
+  background-color:cadetblue;
+}
+.hero-right{
+  background-color: cadetblue;
 }
