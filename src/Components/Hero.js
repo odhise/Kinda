@@ -6,30 +6,32 @@ const Hero=()=>{
         <div className="hero-section">
             <div className="hero-left">
                 <div>
-                    <h2>How to Buy on Kinda?</h2>
+                    <h4>How to Buy on Kinda?</h4>
                 </div>
             </div>
             <div className="hero-right">
                 <div>
-                    <h2>Find new & used car for Sale</h2>
+                    <h4>Find new & used car for Sale</h4>
                     <p>Browse thousands of new and used cars for every budget from verified dealers near you.</p>
 
+                     <div className="right-content">
                     <div>
-                    <input type="" placeholder="Pick a make" />
+                    <input className="make" type="" placeholder="Pick a make" />
                     </div>
                     <div>
-                    <input type="" placeholder="Pick a model" />
+                    <input  className="model" type="" placeholder="Pick a model" />
+                    </div>
                     </div>
                     <div className="service">
                         <div>
-                        <input type="" placeholder="Year" />
+                        <input className="year" type="" placeholder="Year" />
                         </div>
                         <div>
-                        <input type="" placeholder="Fuel" />
+                        <input className="fuel" type="" placeholder="Fuel" />
                         </div>
                     </div>
                     <div>
-                        <input type="" placeholder="SEARCH CARDS" />
+                        <input className="search-cards" type="" placeholder="SEARCH CARDS" />
                     </div>
 
                 </div>

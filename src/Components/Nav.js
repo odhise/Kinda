@@ -8,10 +8,10 @@ const Nav=()=>{
                 </div>
             <div className="nav-content">
                 <div>
-                    <button className="btn1">BUY A CAR</button>
+                    <button className="btn1">Buy a Car</button>
                 </div>
                 <div>
-                    <button className="btn2">SELL A CAR</button>
+                    <button className="btn2">Sell a Car</button>
                 </div>
                 <div>
                 <button className="btn3">LOGIN</button>

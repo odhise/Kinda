@@ -1,10 +1,12 @@
 import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
+import Image from "next/image";
 
 
 const HomePage=()=>{
     return(
+        <div>
         <div className="container1">
             <div className="homee">
             <div>
@@ -28,6 +30,13 @@ const HomePage=()=>{
                         <SearchIcon />
                     </div>
                 </div>
+
+                
+
+
+        </div>
+
+
         </div>
     )
 }
