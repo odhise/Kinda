@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import car2 from '../../public/Images/car2.png'
 import panyukov1 from "../../public/Images/dima-panyukov1.png"
 import campbell1 from "../../public/Images/campbell1.png"
@@ -18,36 +19,40 @@ const Main=()=>{
             <h3>Trending Ads</h3>
         <div className="main-container">
             
-            <div>
-                <Image src={car2} alt="quality car for sale" width={600} height={400}  />
+            <div className="car">
+                <Image src={car2} alt=" " width={500} height={400}  />
             </div>
-            <div>
+            <div className="car">
                 <Image src={panyukov1} alt="" width={500} height={400} />
 
             </div>
-            <div>
+            <div className="car">
             <Image src={campbell1} alt="" width={500} height={400} />
             </div>
-            <div>
+            <div className="car">
             <Image src={mercedez1} alt="" width={500} height={400} />
             </div>
-            <div>
+            <div className="car">
             <Image src={joey2} alt="" width={500} height={400} />
             </div>
-            <div>
+            <div className="car">
             <Image src={remy2} alt="" width={500} height={400} />
             </div>
-            <div>
+            <div className="car">
             <Image src={aaron1} alt="" width={500} height={400} />
             </div>
-            <div>
+            <div className="car">
             <Image src={autocar1} alt="" width={500} height={400} />
             </div>
-            <div>
+            <div className="car">
             <Image src={matthijs1} alt="" width={500} height={400} />
             </div>
-
         </div>
+        <div>
+            <button className="show" >Show More</button>
+            <ArrowForwardIcon />
+        </div>
+       
         </div>
     )
 }

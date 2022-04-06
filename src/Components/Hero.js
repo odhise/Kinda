@@ -1,5 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import odhis from "../../public/Images/odhis.jpeg"
+import share1 from "../../public/Images/share1.png"
+import toyota from "../../public/Images/toyota.png"
+
 
 const Hero=()=>{
     return(
@@ -7,6 +11,24 @@ const Hero=()=>{
             <div className="hero-left">
                 <div>
                     <h4>How to Buy on Kinda?</h4>
+                </div>
+                <div>
+
+                       
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <Image src={odhis} width="300px" height="250px"   alt="..." />
+    </div>
+    <div class="carousel-item">
+      <Image src={share1}  width="400px" height="250px"   alt="..." />
+    </div>
+    <div class="carousel-item">
+      <Image src={toyota} width="400px" height="250px"  alt="..." />
+    </div>
+  </div>
+</div>
+
                 </div>
             </div>
             <div className="hero-right">
@@ -32,6 +54,7 @@ const Hero=()=>{
                     </div>
                     <div>
                         <input className="search-cards" type="" placeholder="SEARCH CARDS" />
+                        
                     </div>
 
                 </div>

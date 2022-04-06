@@ -1,7 +1,6 @@
 import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
-import Image from "next/image";
 
 
 const HomePage=()=>{
