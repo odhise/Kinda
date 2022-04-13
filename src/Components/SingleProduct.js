@@ -1,22 +1,36 @@
 import React from "react";
-import Image from "next/image";
-import lambo from "../../public/Images/lambo.png"
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const SingleProduct=()=>{
     return(
-        <div className="">
+        <div>
             <div>
-                <h4>New Car Showroom/Dealers  in kenya</h4>
-                <p>Looking to buy a new car? Welcome to Kinda.co.ke comprehensive dealer locator to help you find authorised new car showrooms/dealers in Kenya</p>
+                <div>
+                    
+                </div>
+            <div className="img-detail">
+                <div>
+                    <p>Well maintained Mercedez for Sell in Nairobi</p>
+                </div>
             </div>
             <div>
-                <Image src={lambo} width="400px" height="300px" />
-                <p>Well maintained Lamborghini for sale in Nairobi</p>
-            </div>
             <div>
+                <h3>Features</h3>
+            </div>
+                <div>
+                    <ul>
+                        <li>Mileage -862,555KM</li>
+                        <li>Engine -6Cylinder </li>
+                        <li>Automatic</li>
+                        <li>Warm & Leather Seats</li>
+                        <li>Auto Climate Control</li>
+                        <li>Automatic HeadLights</li>
+                    </ul>
 
+                </div>
             </div>
 
+        </div>
         </div>
     )
 }

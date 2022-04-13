@@ -4,9 +4,12 @@ import Nav from '../src/Components/Nav'
 import HomePage from '../src/Components/HomePage'
 import Hero from '../src/Components/Hero'
 import Main from '../src/Components/Main'
-import Body from '../src/Components/Body'
 import Select from '../src/Components/Select'
 import SingleProduct from '../src/Components/SingleProduct'
+import Category from '../src/Components/Category'
+import Body from '../src/Components/Body'
+import About from '../src/Components/About'
+import Login from '../src/Components/Login'
 import styles from '../styles/Home.module.css'
 
 
@@ -26,9 +29,13 @@ export default function Home() {
         <HomePage />
         <Hero />
         <Main />
-        <Body />
         <Select />
         <SingleProduct />
+        <Category />
+        <Body />
+        <About />
+        <Login />
+
     </div>
     
   )

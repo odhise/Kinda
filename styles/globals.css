@@ -130,48 +130,27 @@ strong{
   display: flex;
   justify-content: space-between;
   gap: 1em;
-  background-color:#A3A3A3;
+  background-color:transparent;
   width: 50%;
 }
 .hero-left h4{
-  color: white;
+  color: teal;
 }
 .hero-right{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color:#A3A3A3;
   width:45%;
 
 }
+
 .service{
   display: flex;
   gap: .2em;
   margin: 1em 0 ;
 }
-.make{
-  width: 400px;
-  border-radius: 4px;
-}
-.model{
-  width: 400px;
-  border-radius: 4px;
 
-}
-.year{
-  width: 200px;
-  border-radius: 3px;
-}
-.fuel{
-  width: 200px;
-  border-radius: 3px;
-}
-.search-cards{
-  width: 400px;
-  border-radius: 4px;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-}
 .right-content{
   margin: 2em 0;
 }
@@ -180,31 +159,19 @@ strong{
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color:  #61C55F;
-  border: 6px solid grey;
-  border-radius: 5px;
+  background-color: black;
+  color: white;
   gap: 1em;
   
 }
-.main-container img{
-  flex: 1;
-}
-.car{
-  border: 4px solid  lightgrey;
-  border-radius: 5px;
-  box-shadow: 3px  5px  3px 5px  lightgrey;
-
-}
-.car:hover{
-  background-color: black;
-  transition: all 0.3s;
-}
-.card-text{
-  color: #42B83A;
-}
 .show{
   border: none;
+  color: teal;
 }
+.show:hover{
+  color: white;
+}
+
 .product{
   display: flex;
   justify-content: space-between;
@@ -214,21 +181,122 @@ strong{
 .select-cars{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2em;
 }
-.col:hover{
-  background-color:  black;
-  transition:  all 0.3s;
+.single-page{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
   color: white;
 }
-.card:hover{
-  background-color:  black;
-  color: white;
-  transition:  all 0.5s;
+.category-item{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.category-item h3{
+  text-align: center;
+  color: red;
+  font-weight: 500;
+}
+.body-pattern{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #A3A3A3;
+  gap: 2em;
+}
+.body-container h4{
+ text-align: center;
+ color: red;
+ font-weight: 500;
+}
+.img-detail{
+  background-image:url("../public/Images/shaz1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 250px;
+
+
+}
+.option{
+  color: blue;
+}
+.service select{
+  width: 200px;
+  padding: .8em  0;
+  border-radius: 5px;
+  gap: 1em;
   
+}
+.right-content select{
+  width: 500px;
+  padding: 1em 0;
+  border-radius: 5px;
+  margin: 1em 0;
+}
+.search-card{
+  width: 500px;
+  text-align: center;
+  padding: 1em 0;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  margin-bottom: .3em ;
+}
+.login-container{
+  background-color:  #42B83A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.user-detail{
+  border: none;
 
+}
+.user-info{
+  border: 1px solid lightskyblue;
+  border-radius: 4px;
+  background-color: white;
+  margin: .6em 0;
 
+}
+.user-info:focus{
+  outline: none;
+}
+.lock{
+  border: none;
+}
+.password{
+  border: 1px  solid  lightgrey;
+  background-color: white;
+  border-radius: 4px;
+  margin: .6em 0;
+}
+.lock:focus{
+  outline: none;
+}
+.sign{
+  display: flex;
+  gap: .8em;
+}
+.log{
+  width: 250px;
+  border-radius: 5px;
+  background-color:black ;
+  padding: .5em 0;
+  color: white;
+  margin: .6em 0;
+}
+.sign-up{
+  width: 100px;
+  border-radius: 5px;
+  padding: .3em 0;
 }
 
 

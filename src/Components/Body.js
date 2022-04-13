@@ -1,100 +1,43 @@
 import React from "react";
 import Image from "next/image";
-import  retanapw from "../../public/Images/retanapw.png"
-import nissan3 from "../../public/Images/nissan3.png"
-import macro2 from "../../public/Images/macro2.png"
-import stefany from "../../public/Images/stefany.png"
-import convert from "../../public/Images/convert.png"
-import remy2 from "../../public/Images/remy2.png"
+import cruiserimp1 from "../../public/Images/cruiserimp1.png"
+import urbandrive1 from "../../public/Images/urbandrive1.png"
+import khush7i from "../../public/Images/khush7i.png"
+import prestige1 from "../../public/Images/prestige1.png"
+import carsoko1 from "../../public/Images/carsoko1.png"
+import { containerClasses } from "@mui/material";
+
+
+
+
 
 
 
 
 const Body=()=>{
     return(
-        <div >
+        <div className="body-container">
+              <div>
+          <h4>Dealership / Partners</h4>
+          </div>
+        <div className="body-pattern" >
+          
             <div>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card ">
-      <Image src={retanapw} width="450px" height="250px" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">ISUZU RX</h5>
-        <p class="card-text">Price Ksh.2,500,000.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Model 2021</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div >
-      <Image src={nissan3}  width="450px" height="250px" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">NISSAN-CX3</h5>
-        <p className="card-text">Price Ksh.3,800,000.</p>
-      </div>
-      <div className="card-footer">
-        <small className="text-muted">Model 2017</small>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-    <div >
-      <Image src={macro2}  width="450px" height="250px"  alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">VOLkSWAGEN </h5>
-        <p className="card-text">Price Ksh.3,000,000</p>
-      </div>
-      <div className="card-footer">
-        <small className="text-muted">Model 2019</small>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div className="row row-cols-1 row-cols-md-3 g-4">
-  <div className="col">
-    <div class="card ">
-      <Image src={stefany} width="450px" height="250px" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">CHEVLORET</h5>
-        <p className="card-text">Price Ksh.2,500,000.</p>
-      </div>
-      <div className="card-footer">
-        <small className="text-muted">Model 2021</small>
-      </div>
-    </div>
-  </div>
-  <div className="col">
-    <div >
-      <Image src={convert}  width="450px" height="250px" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">MAZDA</h5>
-        <p className="card-text">Price Ksh.2,999,000.</p>
-      </div>
-      <div className="card-footer">
-        <small className="text-muted">Model 2017</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div >
-      <Image src={remy2}  width="450px" height="250px"  alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">AUDI </h5>
-        <p className="card-text">Price Ksh.7,849,000</p>
-      </div>
-      <div className="card-footer">
-        <small className="text-muted">Model 2021</small>
-      </div>
-    </div>
-  </div>
-</div>
-
+                <Image src={cruiserimp1} width="200px" height="50px" />
             </div>
+            <div>
+            <Image src={khush7i} width="200px" height="100px" />
+            </div>
+            <div>
+            <Image src={prestige1} width="200px" height="100px" />
+            </div>
+            <div>
+            <Image src={urbandrive1} width="200px" height="100px" />
+            </div>
+            <div>
+            <Image src={carsoko1} width="200px" height="100px" />
+            </div>
+        </div>
         </div>
     )
 }
