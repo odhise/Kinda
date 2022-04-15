@@ -5,11 +5,9 @@ import HomePage from '../src/Components/HomePage'
 import Hero from '../src/Components/Hero'
 import Main from '../src/Components/Main'
 import Select from '../src/Components/Select'
-import SingleProduct from '../src/Components/SingleProduct'
 import Category from '../src/Components/Category'
 import Body from '../src/Components/Body'
 import About from '../src/Components/About'
-import Login from '../src/Components/Login'
 import styles from '../styles/Home.module.css'
 
 
@@ -30,11 +28,10 @@ export default function Home() {
         <Hero />
         <Main />
         <Select />
-        <SingleProduct />
         <Category />
         <Body />
         <About />
-        <Login />
+        
 
     </div>
     

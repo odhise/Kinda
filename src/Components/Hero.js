@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import pexels2 from "../../public/Images/pexels2.png"
-import share1 from "../../public/Images/share1.png"
-import { Select } from "@mui/material";
+import mose1 from "../../public/Images/mose1.png"
+import shaz1 from "../../public/Images/shaz1.png"
+
 
 
 const Hero=()=>{
@@ -10,7 +11,7 @@ const Hero=()=>{
         <div className="hero-section">
             <div className="hero-left">
                 <div>
-                    <h4>How to Buy on Kinda?</h4>
+                    <h4>Buy on Kinda.co.ke</h4>
                 </div>
                 <div>
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -19,7 +20,10 @@ const Hero=()=>{
       <Image src={pexels2} width="500px" height="250px"   alt="..." />
     </div>
     <div class="carousel-item">
-      <Image src={share1}  width="400px" height="250px"   alt="..." />
+      <Image src={mose1}  width="400px" height="250px"   alt="..." />
+    </div>
+    <div class="carousel-item">
+      <Image src={shaz1}  width="400px" height="250px"   alt="..." />
     </div>
   </div>
 </div>

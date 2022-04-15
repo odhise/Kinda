@@ -125,13 +125,13 @@ strong{
 .hero-section{
   display: flex;
   justify-content: space-between;
+
 }
 .hero-left{
   display: flex;
   justify-content: space-between;
   gap: 1em;
   background-color:transparent;
-  width: 50%;
 }
 .hero-left h4{
   color: teal;
@@ -141,7 +141,6 @@ strong{
   align-items: center;
   justify-content: center;
   background-color:#A3A3A3;
-  width:45%;
 
 }
 
@@ -260,6 +259,8 @@ strong{
 
 }
 .user-info{
+  display: flex;
+  align-items: center;
   border: 1px solid lightskyblue;
   border-radius: 4px;
   background-color: white;
@@ -298,6 +299,35 @@ strong{
   border-radius: 5px;
   padding: .3em 0;
 }
+.signup-container{
+  display: flex;
+  margin-top:1em ;
+  align-items: center;
+  justify-content: center;
+}
+.signup-details{
+  display: flex;
+  gap: 1em;
+  margin: .8em 0;
+  padding: .8em 0;
+}
+.signup-details input{
+  border-radius: 5px;
+  width: 200px;
+  padding: .8em  0;
+}
 
-
+.categories input{
+width: 525px;
+margin: .8em 0;
+padding: .8em 0;
+border-radius: 5px;
+}
+.register{
+  width: 550px;
+  background-color: #42B83A;
+  border-radius: 5px;
+  color: white;
+  padding: .8em 0;
+}
 
