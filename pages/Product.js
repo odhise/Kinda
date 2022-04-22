@@ -1,24 +1,55 @@
-import React,{useState} from "react";
-import { Link } from "@mui/material";
 
 
-const Product=()=>{
+import React, { useState } from "react";
 
-    const [Message, setMessage] = useState("")
+const Product = () => {
+    const [imgUrl, setImgUrl] = useState("");
+
+    const [disabled, setDisabled] = useState(false);
+
     const [formData, setFormData] = useState({
-        Productname:"",
-        description:"",
-        image:"",
-        model:"",
-        colors:"",
-        price:""
 
+        Productname: "",
+        description: "",
+        image: "",
+        model: "",
+        colors: "",
+        price: ""
+
+    })
+    const uploadImage = async (e) => {
+        const data = new FormData()
+
+        const fileInput = e.target
+        const files = fileInput.files
+
+        for (let file of files) {
+            data.append("file", file)
+            data.append("upload_preset", "kinda_uploads")
+        }
+
+        try {
+            await fetch("https://api.cloudinary.com/v1_1/myc-tech-academy/image/upload", {
+
+                method: "POST",
+                body: data,
+            }
+            )
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data)
+                    return formData({
+                        ...setFormData, formData, image: data.secure_url
+                    });
+                })
+        }
+        catch (err) {
+            console.log(err);
+        }
     }
-    )
 
-
-   async function handleProduct(e) {
-e.preventDefault()
+    async function handleProduct(e) {
+        e.preventDefault()
 
 
         const url = "https://kiunda.herokuapp.com/api/Product/add"
@@ -27,19 +58,26 @@ e.preventDefault()
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
 
-        }
-         const data = await fetch(url, options)
-            
-            .catch(error => {
-                console.log(error)
+        };
+
+
+        return fetch(url, options)
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.code === 11000) {
+                    console.log("product added")
+
+
+                }
+                else {
+                    console.log(data)
+                    return data;
+                }
             })
-console.log(await data.json())
+    }
 
-        }
-
-
-    return(
-        <div>
+    return (
+        <div className="product-add">
             <div>
                 <h3>Product Details</h3>
             </div>
@@ -47,7 +85,7 @@ console.log(await data.json())
                 <labl>
                     productname *
                 </labl>
-                <input type="" placeholder=""  onChange={(e) => setFormData({ ...formData, productname: e.target.value })} />
+                <input type="" placeholder="" onChange={(e) => setFormData({ ...formData, productname: e.target.value })} />
             </div>
             <div>
                 <label>
@@ -59,32 +97,29 @@ console.log(await data.json())
                 <label>
                     price *
                 </label>
-                <input type=""  placeholder="" onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
+                <input type="" placeholder="" onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
             </div>
             <div>
                 <label>
                     model *
                 </label>
-                <input type=""  placeholder="" onChange={(e) => setFormData({ ...formData, model: e.target.value })} />
+                <input type="" placeholder="" onChange={(e) => setFormData({ ...formData, model: e.target.value })} />
             </div>
             <div>
                 <label>
                     colors *
                 </label>
-                <input type=""  placeholder="" onChange={(e) => setFormData({ ...formData, colors: e.target.value })} />
+                <input type="" placeholder="" onChange={(e) => setFormData({ ...formData, colors: e.target.value })} />
             </div>
             <div>
                 <label>
                     image *
                 </label>
-                <input type="file"  placeholder="File Upload"  onChange={(e) => setFormData({ ...formData, image: e.target.value })} />
+                <input type="file" name="file" placeholder="File Upload" onChange={(e) => uploadImage(e)} />
             </div>
             <div>
-                <button onClick={handleProduct}>Submit and Send</button>
+                <button onClick={handleProduct} disabled={!formData.image} >Submit and Send</button>
             </div>
-            <p>{Message}</p>
-            
-
         </div>
     )
 }

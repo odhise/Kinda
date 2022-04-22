@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import { Link } from "@mui/material"
 
 const SignUp = () => {
-
-
+    
     const [Message, setMessage] = useState("")
 
     const [formData, setFormData] = useState({
@@ -13,8 +12,6 @@ const SignUp = () => {
 
 
     })
-
-
     function handleRegister(e) {
 
         console.log("odhisemagoso")
@@ -42,11 +39,6 @@ const SignUp = () => {
         })
 
     }
-
-
-
-
-
 
     return (
         <div className="signup-container">

@@ -7,6 +7,8 @@ import Main from '../src/Components/Main'
 import Select from '../src/Components/Select'
 import Category from '../src/Components/Category'
 import Body from '../src/Components/Body'
+import BookItem from '../src/Components/BookItem'
+import Filter from '../src/Components/Filter'
 import About from '../src/Components/About'
 import styles from '../styles/Home.module.css'
 
@@ -30,6 +32,8 @@ export default function Home() {
         <Select />
         <Category />
         <Body />
+        <BookItem />
+        <Filter />
         <About />
         
 

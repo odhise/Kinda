@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@mui/material";
 
 const Nav=()=>{
     return(
@@ -16,7 +17,6 @@ const Nav=()=>{
                 <div>
                 <button className="btn3">LOGIN</button>
                 </div>
-
             </div>
 
         </div>

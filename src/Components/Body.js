@@ -17,7 +17,7 @@ const Body=()=>{
     return(
         <div className="body-container">
               <div>
-          <h4>Dealership / Partners</h4>
+          <h4>Dealership & Partners</h4>
           </div>
         <div className="body-pattern" >
           

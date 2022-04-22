@@ -7,7 +7,7 @@
 .discounts{
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   padding: .4em 0;
   color:white;
   background-color:black;
@@ -143,6 +143,15 @@ strong{
   background-color:#A3A3A3;
 
 }
+.hero-right h4{
+  color: red;
+  font-weight: 500px;
+}
+.hero-right p{
+  color: white;
+  font-weight: 300px;
+  font-size: 1.3rem;
+}
 
 .service{
   display: flex;
@@ -165,10 +174,10 @@ strong{
 }
 .show{
   border: none;
-  color: teal;
+  color: red;
 }
 .show:hover{
-  color: white;
+  color:white;
 }
 
 .product{
@@ -204,7 +213,6 @@ strong{
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: #A3A3A3;
   gap: 2em;
 }
 .body-container h4{
@@ -212,19 +220,10 @@ strong{
  color: red;
  font-weight: 500;
 }
-.img-detail{
-  background-image:url("../public/Images/shaz1.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 800px;
-  height: 250px;
-
-
+.body-container{
+  background-color: #A3A3A3;
 }
-.option{
-  color: blue;
-}
+
 .service select{
   width: 200px;
   padding: .8em  0;
@@ -330,4 +329,88 @@ border-radius: 5px;
   color: white;
   padding: .8em 0;
 }
+.kinda-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#A3A3A3 ;
 
+}
+.kinda-details h3{
+  text-align: center;
+  color: red;
+
+}
+.kinda-details p{
+  color: 000;
+  font-weight: 50px;
+  font-size: 1.3rem;
+}
+.car-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+.car-info select{
+  width: 200px;
+  border-radius: 4px;
+  padding: .5em 0;
+}
+.car-info button{
+  width: 130px;
+  border-radius: 5px;
+  padding: .5em  0;
+  background-color: #c53131;
+  color: white;
+}
+.car-container{
+  background-color: black;
+
+}
+.car-container h4{
+  text-align: center;
+  color: white;
+}
+.findcars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#A3A3A3;
+}
+.findcars h3{
+  color: red;
+}
+.findcars p{
+  font-size: 1.3rem;
+  width: 800px;
+}
+.findcars button{
+  width: 150px;
+  padding: 1em 0;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+.product-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.product-add input{
+  display: flex;
+border-radius: 5px;
+width: 400px;
+padding: .8em  0;
+margin: 1em 0;
+}
+
+.product-add button{
+  padding: .8em  0;
+  width: 300px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
