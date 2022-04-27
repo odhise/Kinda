@@ -47,9 +47,6 @@ const SignUp = () => {
                     <div>
                         <input type="text" placeholder="User Name"  onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
                     </div>
-                    <div>
-                        <input type="Number" onChange={(e) => setFormData({ ...formData, contact: e.target.value })} />
-                    </div>
                 </div>
                 <div className="categories">
                     <div>
