@@ -8,14 +8,15 @@ const Nav=()=>{
                     <h1><span>Kinda</span><strong>.co.ke</strong></h1>
                 </div>
             <div className="nav-content">
-                <div>
-                    <button className="btn1">Buy a Car</button>
+            <div>
+                  < Link href="/Product"> <button className="btn2">Sell a Car</button></Link>
                 </div>
                 <div>
-                    <button className="btn2">Sell a Car</button>
+                <Link href="/SignUp"> <button className="btn1">SignUp</button></Link>
                 </div>
+                
                 <div>
-                <button className="btn3">LOGIN</button>
+                <Link href="/Login"><button className="btn3">LOGIN</button></Link>
                 </div>
             </div>
 

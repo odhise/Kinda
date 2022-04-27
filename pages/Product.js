@@ -9,12 +9,13 @@ const Product = () => {
 
     const [formData, setFormData] = useState({
 
-        Productname: "",
+        productname: "",
         description: "",
         image: "",
         model: "",
         colors: "",
-        price: ""
+        price: "",
+        contact:""
 
     })
     const uploadImage = async (e) => {
@@ -35,13 +36,11 @@ const Product = () => {
                 body: data,
             }
             )
-                .then((res) => res.json())
-                .then((data) => {
-                    console.log(data)
-                    return formData({
-                        ...setFormData, formData, image: data.secure_url
-                    });
-                })
+            .then(res=>res.json())
+            .then(dataResult=>{
+                console.log(dataResult.secure_url)
+                return setFormData({...formData, image:dataResult.secure_url})
+            })
         }
         catch (err) {
             console.log(err);
@@ -50,8 +49,7 @@ const Product = () => {
 
     async function handleProduct(e) {
         e.preventDefault()
-
-
+console.log(formData)
         const url = "https://kiunda.herokuapp.com/api/Product/add"
         const options = {
             method: "POST",
@@ -74,6 +72,7 @@ const Product = () => {
                     return data;
                 }
             })
+            
     }
 
     return (
@@ -103,7 +102,13 @@ const Product = () => {
                 <label>
                     model *
                 </label>
-                <input type="" placeholder="" onChange={(e) => setFormData({ ...formData, model: e.target.value })} />
+                <input type="" placeholder=""  onChange={(e) => setFormData({ ...formData, model: e.target.value })} />
+            </div>
+            <div>
+                <label>
+                    Contact *
+                </label>
+                <input type="Number" placeholder=""  onChange={(e) => setFormData({ ...formData, contact: e.target.value })} />
             </div>
             <div>
                 <label>
@@ -117,8 +122,9 @@ const Product = () => {
                 </label>
                 <input type="file" name="file" placeholder="File Upload" onChange={(e) => uploadImage(e)} />
             </div>
+            
             <div>
-                <button onClick={handleProduct} disabled={!formData.image} >Submit and Send</button>
+                <button onClick={handleProduct} disabled={!formData.image}>Submit and Send</button>
             </div>
         </div>
     )

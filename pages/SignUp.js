@@ -27,10 +27,10 @@ const SignUp = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.code === 11000) {
-                    return setMessage("User already Registered.You can now Login")
+                    return setMessage("User already Registered")
                 } else {
                     console.log(data)
-                    setMessage("Succesfully Registered you can Login")
+                    setMessage("Succesfully Registered")
                     return data
                 }
             })
@@ -45,7 +45,10 @@ const SignUp = () => {
             <div className="signup-content">
                 <div className="signup-details">
                     <div>
-                        <input type="text" placeholder="User Name" onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
+                        <input type="text" placeholder="User Name"  onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
+                    </div>
+                    <div>
+                        <input type="Number" onChange={(e) => setFormData({ ...formData, contact: e.target.value })} />
                     </div>
                 </div>
                 <div className="categories">

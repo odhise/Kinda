@@ -122,36 +122,6 @@ strong{
 .form-icon{
   color: #61C55F;
 }
-.hero-section{
-  display: flex;
-  justify-content: space-between;
-
-}
-.hero-left{
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
-  background-color:transparent;
-}
-.hero-left h4{
-  color: teal;
-}
-.hero-right{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:#A3A3A3;
-
-}
-.hero-right h4{
-  color: red;
-  font-weight: 500px;
-}
-.hero-right p{
-  color: white;
-  font-weight: 300px;
-  font-size: 1.3rem;
-}
 
 .service{
   display: flex;
@@ -167,7 +137,7 @@ strong{
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: #61C55F ;
   color: white;
   gap: 1em;
   
@@ -185,19 +155,6 @@ strong{
   justify-content: space-between;
   background-color: #A3A3A3;
 
-}
-.select-cars{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2em;
-}
-.single-page{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
 }
 .category-item{
   display: flex;
@@ -244,7 +201,6 @@ strong{
   border-radius: 5px;
   background-color: #000000;
   color: white;
-  margin-bottom: .3em ;
 }
 .login-container{
   background-color:  #42B83A;
@@ -371,7 +327,7 @@ border-radius: 5px;
 }
 .car-container h4{
   text-align: center;
-  color: white;
+  color:red;
 }
 .findcars{
   display: flex;
@@ -414,3 +370,16 @@ margin: 1em 0;
   background-color: red;
   color: white;
 }
+.allproducts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #A3A3A3;
+  
+}
+.allproducts p{
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgb(167, 19, 19);
+}
+

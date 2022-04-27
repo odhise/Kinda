@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Announcements from '../src/Components/Announcements'
 import Nav from '../src/Components/Nav'
 import HomePage from '../src/Components/HomePage'
-import Hero from '../src/Components/Hero'
 import Main from '../src/Components/Main'
-import Select from '../src/Components/Select'
 import Category from '../src/Components/Category'
 import Body from '../src/Components/Body'
 import BookItem from '../src/Components/BookItem'
@@ -27,9 +25,7 @@ export default function Home() {
       <Announcements />
         <Nav />
         <HomePage />
-        <Hero />
         <Main />
-        <Select />
         <Category />
         <Body />
         <BookItem />
