@@ -202,9 +202,9 @@ strong{
 }
 .signup-container{
   display: flex;
-  margin-top:1em ;
   align-items: center;
   justify-content: center;
+  background-color: black;
 }
 .signup-details{
   display: flex;
@@ -230,6 +230,7 @@ border-radius: 5px;
   border-radius: 5px;
   color: white;
   padding: .8em 0;
+  cursor: pointer;
 }
 .kinda-details{
   display: flex;
@@ -324,6 +325,7 @@ margin: 1em 0;
   border-radius: 5px;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 
 .footer-container{
@@ -404,6 +406,7 @@ margin: 1em 0;
 }
 .sign{
   display: flex;
+  margin: 1em 0;
   gap: 1em;
 }
 .user-info{
@@ -469,9 +472,11 @@ margin: 1em 0;
   text-align: center;
   font-size: 1.3rem;
   font-family: rampat one;
+  background-color: grey;
+  color: white;
 }
 .allproducts{
-  background-color: black;
+  background-color: hsl(116, 52%, 47%);
   color: white;
 }
 .categorized-products{

@@ -1,6 +1,9 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link"
+import Announcements from "../src/Components/Announcements";
+import Nav from "../src/Components/Nav";
+import Footer from "../src/Components/Footer";
 
 import axios from "axios";
 
@@ -20,6 +23,9 @@ const allProduct=()=>{
 
 
     return(
+        <>
+        <Announcements />
+        <Nav />
         <div className="allproducts">
         <div className="categorized-products">
                 {
@@ -42,6 +48,8 @@ const allProduct=()=>{
             </div>
 
         </div>
+        <Footer />
+        </>
     )
 }
 

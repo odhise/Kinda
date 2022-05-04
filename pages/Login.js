@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "@mui/material"
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
+import Announcements from "../src/Components/Announcements";
+import Nav from "../src/Components/Nav";
+import Footer from "../src/Components/Footer";
 
 
 const Login = () => {
@@ -37,6 +40,9 @@ const Login = () => {
             })
     }
     return (
+        <>
+        <Announcements />
+        <Nav />
         <div className="login-container">
             <div>
                 <h3>Login here using your Username & Password </h3>
@@ -60,11 +66,12 @@ const Login = () => {
                     <button className="sign-up"  >SignUp</button>
                 </div>
                 <p>
-                    <Link href={"/Login"}> Go to SignUp Page</Link>
+                    <Link href={"/SignUp"}> Go to SignUp Page</Link>
                 </p>
             </div>
-
         </div>
+        <Footer />
+        </>
     )
 }
 export default Login;

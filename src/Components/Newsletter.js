@@ -8,8 +8,6 @@ import twitter from "../../public/Icons/twitter.svg"
 import whatsapp from "../../public/Icons/whatsapp.svg"
 
 
-
-
 const Newsletter=()=>{
     return(
         <div>
@@ -31,7 +29,7 @@ const Newsletter=()=>{
                     <input type="" placeholder="SUBSCRIBES TO NEWSLTTER" />
                 </div>
                 <div>
-                    <Image src={facebook}  width="90px"  height="50px" />
+                 <Image src={facebook}  width="90px"  height="50px" />
                 </div>
                 <div>
                     <Image src={instagram}  width="90px"  height="50px" />

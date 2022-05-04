@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "@mui/material"
+import Announcements from "../src/Components/Announcements"
+import Nav from "../src/Components/Nav"
+import Footer from "../src/Components/Footer"
 
 const SignUp = () => {
     
@@ -41,6 +44,9 @@ const SignUp = () => {
     }
 
     return (
+        <>
+        <Announcements />
+        <Nav />
         <div className="signup-container">
             <div className="signup-content">
                 <div className="signup-details">
@@ -64,10 +70,12 @@ const SignUp = () => {
 
 
                 <p>
-                    <Link href={"/SignUp"}> Go to Login Page</Link>
+                    <Link href={"/Login"}> Go to Login Page</Link>
                 </p>
             </div>
         </div>
+        <Footer />
+        </>
     )
 
 }

@@ -1,6 +1,10 @@
 
 
 import React, { useState } from "react";
+import Announcements from "../src/Components/Announcements";
+import Nav from "../src/Components/Nav";
+import Footer from "../src/Components/Footer";
+
 
 const Product = () => {
     const [imgUrl, setImgUrl] = useState("");
@@ -115,6 +119,9 @@ console.log(formData)
     }
 
     return (
+        <>
+        <Announcements />
+        <Nav/>
         <div className="product-add">
             <div>
                 <h3>Product Details</h3>
@@ -173,6 +180,8 @@ console.log(formData)
                 <button onClick={handleProduct} disabled={submitting} style={{cursor:submitting===false && "pointer"}}>Submit and Send</button>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 
