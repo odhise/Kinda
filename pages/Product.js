@@ -12,28 +12,31 @@ const Product = () => {
         productname: "",
         description: "",
         image: "",
+        smallImages:"",
         model: "",
         colors: "",
         price: "",
         contact:""
 
     })
+const [submitting, setSubmitting] = useState(true)
+    const urlList = [];
     const uploadImage = async (e) => {
-        const data = new FormData()
+        const mainImgData = new FormData()
 
         const fileInput = e.target
         const files = fileInput.files
 
         for (let file of files) {
-            data.append("file", file)
-            data.append("upload_preset", "kinda_uploads")
+            mainImgData.append("file", file)
+            mainImgData.append("upload_preset", "kinda_uploads")
         }
 
         try {
             await fetch("https://api.cloudinary.com/v1_1/myc-tech-academy/image/upload", {
 
                 method: "POST",
-                body: data,
+                body: mainImgData,
             }
             )
             .then(res=>res.json())
@@ -45,6 +48,42 @@ const Product = () => {
         catch (err) {
             console.log(err);
         }
+    }
+
+    const uploadImages = async (e) => {
+        const smallImgData = new FormData()
+
+        const fileInput = e.target
+        const files = fileInput.files
+
+        for (let file of files) {
+            smallImgData.append("file", file)
+            smallImgData.append("upload_preset", "kinda_uploads")
+
+            try {
+                await fetch("https://api.cloudinary.com/v1_1/myc-tech-academy/image/upload", {
+    
+                    method: "POST",
+                    body: smallImgData,
+                }
+                )
+                .then(res=>res.json())
+                .then(dataResult=>{
+                    console.log(dataResult.secure_url)
+                    return urlList.push(dataResult.secure_url)
+                })
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+
+        if(urlList.length === 4){
+            setSubmitting(false)
+            console.log(urlList)
+        }
+        
+        setFormData({...formData, smallImages:urlList})
     }
 
     async function handleProduct(e) {
@@ -108,7 +147,7 @@ console.log(formData)
                 <label>
                     Contact *
                 </label>
-                <input type="Number" placeholder=""  onChange={(e) => setFormData({ ...formData, contact: e.target.value })} />
+                <input className="contact" type="Number" placeholder=""  onChange={(e) => setFormData({ ...formData, contact: e.target.value })} />
             </div>
             <div>
                 <label>
@@ -122,9 +161,16 @@ console.log(formData)
                 </label>
                 <input type="file" name="file" placeholder="File Upload" onChange={(e) => uploadImage(e)} />
             </div>
+
+            <div>
+                <label>
+                    FeaturedIamges*
+                </label>
+                <input type="file" name="file" placeholder="File Upload"  multiple  onChange={(e) => uploadImages(e)} />
+            </div>
             
             <div>
-                <button onClick={handleProduct} disabled={!formData.image}>Submit and Send</button>
+                <button onClick={handleProduct} disabled={submitting} style={{cursor:submitting===false && "pointer"}}>Submit and Send</button>
             </div>
         </div>
     )

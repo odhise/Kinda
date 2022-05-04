@@ -8,6 +8,8 @@ import Body from '../src/Components/Body'
 import BookItem from '../src/Components/BookItem'
 import Filter from '../src/Components/Filter'
 import About from '../src/Components/About'
+import Newsletter from '../src/Components/Newsletter'
+import Footer from '../src/Components/Footer'
 import styles from '../styles/Home.module.css'
 
 
@@ -31,6 +33,8 @@ export default function Home() {
         <BookItem />
         <Filter />
         <About />
+        <Newsletter />
+        <Footer />
         
 
     </div>

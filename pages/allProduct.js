@@ -25,24 +25,20 @@ const allProduct=()=>{
                 {
                     products.map(item=>{
                         return(
-                            <div>
+                            <div className="myparagraph">
                               <Link href={`Products/${item._id}`}>
                               <img src={item.image}  width={"400px"} height={"250px"} style={{cursor:"pointer"}}/> 
                               </Link> 
                                 <h2>{item.productname}</h2>
-                                <p>{item.description}</p>
                                 <p>{item.model}</p>
-                                <p>{item.price}</p>
+                                <p>{item.description}</p>
+                                <p>Ksh.{item.price}</p>
                                 <p>{item.colors}</p>
-                                <p>{item.contact}</p>
+                                <p>TEL:{item.contact}</p>
                             </div>
                         )
                     })
                 }
-
-                <div>
-                <Link href={"/Products"}> Go to Products </Link>
-                </div>
             </div>
 
         </div>

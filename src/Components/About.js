@@ -8,7 +8,7 @@ const About=()=>{
                     <h3>About Kinda.co.ke</h3>
                 </div>
                 <div>
-                    <p>In a rapidly changing market, Kinda is a transformative, reliable and secure marketplace in which you can Select, Buy or Sell a variety of New and Used Cars</p>
+                    <p>In a rapidly changing market, Kinda is a transformative, reliable and secure marketplace in which you can Select, Buy or Sell a variety of New and Used Cars!</p>
                 </div>
             </div>
 

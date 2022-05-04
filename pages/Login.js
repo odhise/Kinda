@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "@mui/material"
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 
 const Login = () => {
-
     const [Message, setMessage] = useState("")
 
     const [formData, setFormData] = useState({
@@ -14,8 +12,6 @@ const Login = () => {
         password: ""
 
     })
-
-
     function handleLogin(e) {
 
         const url = "https://kiunda.herokuapp.com/api/Auth/Login"
@@ -39,27 +35,19 @@ const Login = () => {
             .catch(error => {
                 console.log(error.response.status)
             })
-
-
     }
-
     return (
         <div className="login-container">
             <div>
-                <h4>Login here using your Username & Password </h4>
+                <h3>Login here using your Username & Password </h3>
             </div>
             <div className="user-info">
-                <div className="user-detail">
                     <AccountCircleOutlinedIcon />
                     <input type="" placeholder="Username" onChange={(e) => setFormData({ ...formData, username: e.target.value })} />
-                </div>
             </div>
             <div className="password">
-                <div className="lock">
                     <LockOpenIcon />
                     <input type="password" placeholder="Password" onChange={(e) => setFormData({ ...formData, password: e.target.value })} />
-                    <VisibilityOffIcon className="visibity" />
-                </div>
             </div>
             <div>
                 <button className="log" onClick={(e) => handleLogin(e)} >Login</button>
@@ -79,6 +67,4 @@ const Login = () => {
         </div>
     )
 }
-
-
 export default Login;

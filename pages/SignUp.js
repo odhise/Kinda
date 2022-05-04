@@ -14,7 +14,7 @@ const SignUp = () => {
     })
     function handleRegister(e) {
 
-        console.log("odhisemagoso")
+        console.log("Evans")
         const url = "https://kiunda.herokuapp.com/api/Auth/Register"
         const options = {
             method: "POST",
