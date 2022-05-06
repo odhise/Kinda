@@ -23,7 +23,7 @@ const Newsletter=()=>{
             <div className="sub">
                 <div>
                     <label>Email *</label>
-                    <input type="Email"  />
+                    <input type="Email"  placeholder="Email" />
                 </div>
                 <div>
                     <input type="" placeholder="SUBSCRIBES TO NEWSLTTER" />

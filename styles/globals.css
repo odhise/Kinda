@@ -17,20 +17,25 @@
 }
 .nav-container{
   background-color: #42B83A;
+  
+
+}
+ .nav-links a:first-child{
+   text-decoration: none;
+   color: white;
+}
+.nav-links{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 3em;
+  width: 90%;
+  margin: 0 auto;
 
-}
- .nav-container h1{
-  align-items: center;
 }
 span{
   color: white;
-}
-strong{
-  color: red;
+  font-family: 'Rubik Beastly', cursive;
 }
  .nav-content{
   display: flex;
@@ -67,7 +72,7 @@ strong{
 .container1{
   display: flex;
   flex-direction: column;
-  background-color: black; 
+  /* background-color: black;  */
   color: white;  
   padding: 2em 0;
   gap: 1em;
@@ -102,25 +107,45 @@ strong{
 .find{
   color: red;
 }
-.form input{
+.search-form input{
   width: 550px;
-  color: #AFDDF7;
-  padding: 1.5em 0;
+  padding: 1.5em;
   border: none;
-}
-.form{
-  background-color: white;
-  display: flex;
-  border: 2px  solid  lightseagreen;
-  align-items: center;
-  border-radius: 5px;
+  border-radius: 50%;
+ 
+
 
 }
-.form input:focus{
+.search-form{
+  display: flex;
+  border: 2px  solid  black;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 1em;
+
+}
+.search-form input:focus{
   outline: none;
 }
-.form-icon{
-  color: #61C55F;
+.search-model{
+  display: flex;
+  /* width: 80%; */
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+.search-icon{
+  font-size: 50px;
+  border-radius: 50px;
+}
+
+.search{
+  width: 35%;
+  margin-left: 10em;
+}
+.search h1{
+  font-size: 3rem;
 }
 
 .service{
@@ -131,24 +156,15 @@ strong{
 
 .right-content{
   margin: 2em 0;
-}
-.main-container{
-  display: flex;
-  justify-content: space-between;
-  background-color: black ;
-  color: white;
-  
-}
-.main-container img{
-  border: 3px  solid grey;
-  border-radius: 5px;
-}
+} 
+
 .main-products{
+  padding:2em 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 95%;
+  margin: 0 auto;
   flex-wrap: wrap;
-  gap: 3em;
+  gap: 2em;
   
 }
 .main-products p{
@@ -164,16 +180,22 @@ strong{
 }
 .category-item{
   display: flex;
-  align-items: center;
-  justify-content:center;
-  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  justify-content:space-around;
 
 }
-.category-item h3{
+.item-cost{
   text-align: center;
-  color: red;
+  margin: 3em 0;
+}
+.item-cost h3{
+  margin-bottom:1.5em;
   font-family: rampat one;
-  font-weight: 500;
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+
 }
 .body-pattern{
   display:flex;
@@ -186,12 +208,14 @@ strong{
  color: red;
  font-family: rampat one;
  font-size: 2rem;
- font-weight: 500;
+ font-weight: bold;
 }
 .body-container{
-  background-color: #42B83A;
+  background-color: white;
 }
-
+.map-item{
+  box-shadow: 4px 5px 4px lightgray;
+}
 .search-card{
   width: 500px;
   text-align: center;
@@ -232,70 +256,24 @@ border-radius: 5px;
   padding: .8em 0;
   cursor: pointer;
 }
-.kinda-details{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #42B83A;
 
-}
-.kinda-details h3{
-  text-align: center;
-  color: white;
-  font-family: rampat one;
-
-
-}
-.kinda-details p{
-  color: 000;
-  font-weight: 50px;
-  font-size: 1.3rem;
-  color: white;
-  font-family: rampat one;
-}
-.car-info{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5em;
-}
-
-.car-info select{
-  width: 200px;
-  border-radius: 4px;
-  padding: .5em 0;
-}
-.car-info button{
-  width: 130px;
-  border-radius: 5px;
-  padding: .5em  0;
-  background-color: #c53131;
-  color: white;
-}
-.car-container{
-  background-color: black;
-
-}
-.car-container h4{
-  text-align: center;
-  color:white;
-  font-family: rampat one;
-  font-weight: 400px;
-}
 .findcars{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #42B83A;
+  background-color: lightgrey;
 }
 .findcars h3{
   color: white;
   font-family: rampat one;
+  font-weight: bold;
 }
 .findcars p{
   font-size: 1.3rem;
   width: 800px;
   font-family: rampat one;
+  font-weight: bold;
+
   color: white;
 }
 .findcars button{
@@ -333,15 +311,16 @@ margin: 1em 0;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: #000000;
+  background-color:  #42B83A;
 }
-.footer-container p{
+.footer-container h3{
   color: white;
   text-align: center;
 }
 .footer-container ul li{
   list-style-type: none;
   color: white;
+  margin: .8em 0;
 }
 .footer-container ul li:hover{
   color: red;
@@ -354,7 +333,7 @@ margin: 1em 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color:black;
+  background-color:rgb(3, 46, 46);
   color: white;
 }
 .newsletter p{
@@ -367,7 +346,7 @@ margin: 1em 0;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background-color: #000000;
+  background-color: rgb(3, 46, 46);
 
 }
 .sub input{
@@ -375,17 +354,8 @@ margin: 1em 0;
   padding: .8em 0;
   width: 300px;
 }
-.singleproduct{
-  background-color: #42B83A;
-}
-.product-end{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 2px   solid  lightgray;
 
-}
+
 .maked{
   display: flex;
   align-items: center;
@@ -476,19 +446,37 @@ margin: 1em 0;
   color: white;
 }
 .allproducts{
-  background-color: hsl(116, 52%, 47%);
-  color: white;
+  padding: 1em 0;
 }
 .categorized-products{
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
   gap: 2em;
 }
-.categorized-products img{
-  border: 2px   solid  grey;
-  border-radius: 5px;
 
+.small-img{
+  display: flex;
+  gap: 1em;
+}
+.singleproduct{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+ 
+}
+.singleproduct img{
+  border-radius: 5px;
+}
+.myparagraph{
+  box-shadow: 5px 6px 5px lightgrey;
+}
+.jan{
+  box-shadow: 5px 4px 6px grey;
+  width: 300px;
+  text-align: center;
 }
 

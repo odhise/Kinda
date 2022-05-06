@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "@mui/material"
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
-import Announcements from "../src/Components/Announcements";
 import Nav from "../src/Components/Nav";
 import Footer from "../src/Components/Footer";
 
@@ -31,7 +30,7 @@ const Login = () => {
                     return setMessage("User already Loggedin")
                 } else {
                     console.log(data)
-                    setMessage("Succesfully Registered you can Login")
+                    setMessage("Succesfully Logggedin ")
                     return data
                 }
             })
@@ -40,8 +39,7 @@ const Login = () => {
             })
     }
     return (
-        <>
-        <Announcements />
+        <div>
         <Nav />
         <div className="login-container">
             <div>
@@ -69,9 +67,10 @@ const Login = () => {
                     <Link href={"/SignUp"}> Go to SignUp Page</Link>
                 </p>
             </div>
+            <p style={{color:"white", fontSize:"1.3rem", fontFamily:"rampat one"}}>{Message}</p>
         </div>
         <Footer />
-        </>
+        </div>
     )
 }
 export default Login;

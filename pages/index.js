@@ -1,13 +1,10 @@
 import Head from 'next/head'
-import Announcements from '../src/Components/Announcements'
 import Nav from '../src/Components/Nav'
 import HomePage from '../src/Components/HomePage'
 import Main from '../src/Components/Main'
 import Category from '../src/Components/Category'
-import Body from '../src/Components/Body'
 import BookItem from '../src/Components/BookItem'
-import Filter from '../src/Components/Filter'
-import About from '../src/Components/About'
+import Body from '../src/Components/Body'
 import Newsletter from '../src/Components/Newsletter'
 import Footer from '../src/Components/Footer'
 import styles from '../styles/Home.module.css'
@@ -24,15 +21,12 @@ export default function Home() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       </Head>
 
-      <Announcements />
         <Nav />
         <HomePage />
         <Main />
         <Category />
-        <Body />
         <BookItem />
-        <Filter />
-        <About />
+        <Body />
         <Newsletter />
         <Footer />
         

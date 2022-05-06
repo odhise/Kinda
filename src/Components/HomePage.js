@@ -1,37 +1,30 @@
 import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SearchIcon from '@mui/icons-material/Search';
+import Image from "next/image";
+import homecar from "../../public/Images/homecar.png"
 
 
 
-const HomePage=()=>{
-    return(
-        <div>
-        <div className="container1">
-            <div className="homee">
+const HomePage = () => {
+    return (
+        <div className="search-model">
+             <div className="search">
+                 <h1>We know what you’re searching for</h1>
+
+                 <div className="search-form">
+                <input type="" placeholder="I am loooking for..." />
+                < SearchIcon className="search-icon" />
+                </div>
+
+            </div>
             <div>
-            <p>Find anything in</p>
-            </div>
-            <div className="home-address">
-                <div className="find">
-                <LocationOnIcon />
-                </div>
-                <div>
-                <input type="" placeholder="All Kenya" />
-                </div>
-            </div>
-            </div>
+                <Image src={homecar} />
 
-            <div className="form">
-                <div>
-                    <input type="" placeholder="I am loooking for..." />
-                    </div>
-                    <div className="form-icon">
-                        <SearchIcon />
-                    </div>
-                </div>
+            </div>
         </div>
-        </div>
+
+
     )
 }
 

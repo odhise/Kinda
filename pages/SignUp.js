@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "@mui/material"
-import Announcements from "../src/Components/Announcements"
 import Nav from "../src/Components/Nav"
 import Footer from "../src/Components/Footer"
 
@@ -12,7 +11,6 @@ const SignUp = () => {
         username: "",
         email: "",
         password: "",
-
 
     })
     function handleRegister(e) {
@@ -33,19 +31,16 @@ const SignUp = () => {
                     return setMessage("User already Registered")
                 } else {
                     console.log(data)
-                    setMessage("Succesfully Registered")
+                    setMessage("Succesfully Registered you can Login")
                     return data
                 }
             })
         .catch(error => {
             console.log(error.response.status)
         })
-
     }
-
     return (
-        <>
-        <Announcements />
+        <div>
         <Nav />
         <div className="signup-container">
             <div className="signup-content">
@@ -65,17 +60,14 @@ const SignUp = () => {
                 <div>
                     <button className="register" onClick={handleRegister} >REGISTER</button>
                 </div>
-
-                <p>{Message}</p>
-
-
+                <p style={{color:"white" ,fontSize:"1.3rem", fontFamily:"rampat one"}}>{Message}</p>
                 <p>
                     <Link href={"/Login"}> Go to Login Page</Link>
                 </p>
             </div>
         </div>
         <Footer />
-        </>
+        </div>
     )
 
 }

@@ -8,7 +8,7 @@ const Footer=()=>{
         <div className="footer-container">
             <div>
                 <div>
-                    <p>About Us</p>
+                    <h3>About Us</h3>
                 </div>
                 <div>
                 <ul>
@@ -21,7 +21,7 @@ const Footer=()=>{
             </div>
             <div>
                 <div>
-                    <p>Support</p>
+                    <h3>Support</h3>
                 </div>
                 <div>
                     <ul>
@@ -34,7 +34,7 @@ const Footer=()=>{
             </div>
             <div>
                 <div>
-                    <p>Our Services</p>
+                    <h3>Our Services</h3>
                 </div>
                 <div>
                     <ul>
@@ -47,7 +47,7 @@ const Footer=()=>{
             </div>
             <div>
                 <div>
-                    <p>Hot Links</p>
+                    <h3>Hot Links</h3>
                 </div>
                 <div>
                     <ul>

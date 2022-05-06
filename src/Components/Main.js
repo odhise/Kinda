@@ -20,32 +20,28 @@ const Main=()=>{
 
 
     return(
-        <div className="main-container">
+        <div style={{backgroundColor:"whitesmoke"}}>
         <div className="main-products">
                 {
-                    products.slice(1,9).map(item=>{
+                    products.slice(0,8).map(item=>{
                         return(
-                            <div>
+                            <div className="map-item">
                               <Link href={`Products/${item._id}`}>
-                              <img src={item.image}  width={"400px"} height={"250px"} style={{cursor:"pointer"}}/> 
+                              <img src={item.image}  width={"380px"} height={"250px"} style={{cursor:"pointer"}}/> 
                               </Link> 
                               <div className="product-end" >
-                                  <div className="maked">
-                                <h2>{item.productname}</h2>
+                                 
                                 <p>{item.model}</p>
-                                </div>
-                                <p>{item.description}</p>
-                                <p>Ksh.{item.price}</p>
-                                <p>{item.colors}</p>
-                                <p>TEL:{item.contact}</p>
+                                
+                                <p style={{color:"teal", fontSize:"1.5rem"}}>Ksh. {item.price} </p>
                                 </div>
                             </div>
                         )
                     })
                 }
             </div>
+            </div>
 
-        </div>
     )
 }
 

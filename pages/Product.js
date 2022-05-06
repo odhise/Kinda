@@ -1,7 +1,6 @@
 
 
 import React, { useState } from "react";
-import Announcements from "../src/Components/Announcements";
 import Nav from "../src/Components/Nav";
 import Footer from "../src/Components/Footer";
 
@@ -120,7 +119,6 @@ console.log(formData)
 
     return (
         <>
-        <Announcements />
         <Nav/>
         <div className="product-add">
             <div>
