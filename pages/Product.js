@@ -99,8 +99,6 @@ console.log(formData)
             body: JSON.stringify(formData)
 
         };
-
-
         return fetch(url, options)
             .then((res) => res.json())
             .then((data) => {

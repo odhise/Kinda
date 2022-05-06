@@ -304,12 +304,14 @@ margin: 1em 0;
   color: white;
   text-align: center;
   margin-top: 2em;
-
+  font-family: rampat one;
 }
 .footer-container ul li{
   list-style-type: none;
   color: white;
+  font-family: rampat one;
   margin: .8em 0;
+  font-size: 1.3rem;
 }
 .footer-container ul li:hover{
   color: red;
