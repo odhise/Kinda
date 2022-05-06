@@ -3,6 +3,7 @@ import { Link } from "@mui/material"
 import Nav from "../src/Components/Nav"
 import Footer from "../src/Components/Footer"
 
+
 const SignUp = () => {
     
     const [Message, setMessage] = useState("")
@@ -41,7 +42,7 @@ const SignUp = () => {
     }
     return (
         <div>
-        <Nav />
+            <Nav />
         <div className="signup-container">
             <div className="signup-content">
                 <div className="signup-details">

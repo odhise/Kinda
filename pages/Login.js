@@ -40,10 +40,11 @@ const Login = () => {
     }
     return (
         <div>
-        <Nav />
+            <Nav />
+            <div className="log-in">
         <div className="login-container">
             <div>
-                <h3>Login here using your Username & Password </h3>
+                <h2>Login  </h2>
             </div>
             <div className="user-info">
                     <AccountCircleOutlinedIcon />
@@ -58,16 +59,13 @@ const Login = () => {
             </div>
             <div className="sign">
                 <div>
-                    <p>Forgot your Password?</p>
+                    <p>Don't have an account? <Link href={"/SignUp"}>SignUp</Link></p>
                 </div>
-                <div>
-                    <button className="sign-up"  >SignUp</button>
-                </div>
-                <p>
-                    <Link href={"/SignUp"}> Go to SignUp Page</Link>
-                </p>
+               
+               
             </div>
             <p style={{color:"white", fontSize:"1.3rem", fontFamily:"rampat one"}}>{Message}</p>
+        </div>
         </div>
         <Footer />
         </div>

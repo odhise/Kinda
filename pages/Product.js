@@ -118,8 +118,8 @@ console.log(formData)
     }
 
     return (
-        <>
-        <Nav/>
+        <div>
+            <Nav />
         <div className="product-add">
             <div>
                 <h3>Product Details</h3>
@@ -179,7 +179,7 @@ console.log(formData)
             </div>
         </div>
         <Footer/>
-        </>
+        </div>
     )
 }
 

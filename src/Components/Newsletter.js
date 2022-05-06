@@ -1,11 +1,6 @@
 
 
 import React from "react"
-import Image from "next/image";
-import facebook from "../../public/Icons/facebook.svg"
-import instagram from "../../public/Icons/instagram.svg"
-import twitter from "../../public/Icons/twitter.svg"
-import whatsapp from "../../public/Icons/whatsapp.svg"
 
 
 const Newsletter=()=>{
@@ -22,23 +17,10 @@ const Newsletter=()=>{
             </div>
             <div className="sub">
                 <div>
-                    <label>Email *</label>
                     <input type="Email"  placeholder="Email" />
                 </div>
                 <div>
-                    <input type="" placeholder="SUBSCRIBES TO NEWSLTTER" />
-                </div>
-                <div>
-                 <Image src={facebook}  width="90px"  height="50px" />
-                </div>
-                <div>
-                    <Image src={instagram}  width="90px"  height="50px" />
-                </div>
-                <div>
-                    <Image src={twitter}  width="90px"  height="50px" />
-                </div>
-                <div>
-                    <Image src={whatsapp}  width="90px"  height="50px" />
+                   <button className="subscribe"> SUBSCRIBES TO NEWSLTTER</button>
                 </div>
             </div>
           </div>

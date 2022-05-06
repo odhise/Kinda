@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "@mui/material";
-// import Link from "next/link";
 
 const Nav = () => {
     return (
@@ -8,16 +7,15 @@ const Nav = () => {
             <div className="nav-links">
             <div>
                 <h1>
-                <Link href="/ " ><a>Kinda</a></Link>
+                <Link href="/ " >Kinda</Link>
                 </h1>
-                
             </div>
             <div className="nav-content">
             <div>
-                    < Link href="/allProduct"> <button className="btn2">All products</button></Link>
+                    <Link href="/allProduct"> <button className="btn4">All products</button></Link>
                 </div>
                 <div>
-                    < Link href="/Product"> <button className="btn2">SELL A CAR</button></Link>
+                    <Link href="/Product"> <button className="btn2">SELL A CAR</button></Link>
                 </div>
                 <div>
                     <Link href="/SignUp"> <button className="btn1">SignUp</button></Link>
@@ -27,11 +25,9 @@ const Nav = () => {
                     <Link href="/Login"><button className="btn3">LOGIN</button></Link>
                 </div>
             </div>
-
             </div>
-
         </div>
     )
 }
 
-export default Nav
+export default Nav;

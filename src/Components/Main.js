@@ -30,10 +30,8 @@ const Main=()=>{
                               <img src={item.image}  width={"380px"} height={"250px"} style={{cursor:"pointer"}}/> 
                               </Link> 
                               <div className="product-end" >
-                                 
-                                <p>{item.model}</p>
-                                
-                                <p style={{color:"teal", fontSize:"1.5rem"}}>Ksh. {item.price} </p>
+                                <p style={{color:"black", fontFamily:"rampat one",fontWeight:"bold"}}> {item.model}</p>
+                                <p style={{color:" #42B83A", fontSize:"1.5rem" ,fontWeight:"bold"}}>Ksh. {item.price} </p>
                                 </div>
                             </div>
                         )

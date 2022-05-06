@@ -35,7 +35,7 @@
 }
 span{
   color: white;
-  font-family: 'Rubik Beastly', cursive;
+  font-family: rampat one;
 }
  .nav-content{
   display: flex;
@@ -60,49 +60,28 @@ span{
 
   
 }
+.btn4{
+  color: white;
+  background-color: red;
+  padding: 1em 2em;
+  border-radius: .5em;
+  margin: .8em 0;
+}
 .btn3{
   color:white;
   background-color: #000000;
   padding: 1em 2em;
   border-radius: .5em;
   margin: .8em 0;
-
-
 }
 .container1{
   display: flex;
   flex-direction: column;
-  /* background-color: black;  */
   color: white;  
   padding: 2em 0;
   gap: 1em;
   align-items: center;
   justify-content: center;
-}
-.homee{
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-.home-address{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid teal  2px;
-  border-radius: 2px;
-  background-color: white;
-
-}
-
-.home-address input{
-  width: 130px;
-  padding: 1.5em 0;
-  border-radius: 5px;
-  border: none;
-}
-
-.home-address input:focus{
-  outline: none;
 }
 .find{
   color: red;
@@ -112,9 +91,6 @@ span{
   padding: 1.5em;
   border: none;
   border-radius: 50%;
- 
-
-
 }
 .search-form{
   display: flex;
@@ -129,7 +105,6 @@ span{
 }
 .search-model{
   display: flex;
-  /* width: 80%; */
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +169,7 @@ span{
   font-family: rampat one;
   color: red;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.3rem;
 
 }
 .body-pattern{
@@ -207,11 +182,12 @@ span{
  text-align: center;
  color: red;
  font-family: rampat one;
- font-size: 2rem;
+ font-size: 2.3rem;
  font-weight: bold;
 }
 .body-container{
-  background-color: white;
+  background-color:white;
+  margin:2em 0;
 }
 .map-item{
   box-shadow: 4px 5px 4px lightgray;
@@ -226,31 +202,42 @@ span{
 }
 .signup-container{
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: black;
+  width:700px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 4.5em;
+  box-shadow: 7px 6px 7px 6px  lightgray;
+
 }
 .signup-details{
   display: flex;
   gap: 1em;
   margin: .8em 0;
   padding: .8em 0;
+
 }
 .signup-details input{
   border-radius: 5px;
-  width: 200px;
+  width: 500px;
   padding: .8em  0;
+}
+.signup-details input:focus{
+  outline: none;
 }
 
 .categories input{
-width: 525px;
+width: 500px;
 margin: .8em 0;
 padding: .8em 0;
 border-radius: 5px;
 }
+.categories input:focus{
+  outline: none;
+}
 .register{
-  width: 550px;
-  background-color: #42B83A;
+  width: 200px;
+  background-color: red;
   border-radius: 5px;
   color: white;
   padding: .8em 0;
@@ -261,7 +248,7 @@ border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
+  background-color:rgb(9, 9, 109);
 }
 .findcars h3{
   color: white;
@@ -308,14 +295,16 @@ margin: 1em 0;
 
 .footer-container{
   display: flex;
-  justify-content: space-between;
+  margin-top: 2em;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color:  #42B83A;
 }
 .footer-container h3{
   color: white;
   text-align: center;
+  margin-top: 2em;
+
 }
 .footer-container ul li{
   list-style-type: none;
@@ -328,12 +317,15 @@ margin: 1em 0;
 .footer-container  a{
   text-decoration: none;
 }
+.footer-background{
+  background-color:  rgb(24, 22, 22);
+}
 .newsletter{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color:rgb(3, 46, 46);
+  background-color:  rgb(24, 22, 22);
   color: white;
 }
 .newsletter p{
@@ -341,37 +333,55 @@ margin: 1em 0;
   font-size: 1.3rem;
   font-family: rampat one;
 }
+.subscribe{
+  padding: 1em ;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+
+}
+.subscribe:hover{
+  background-color: rgb(22, 22, 122);
+}
 .sub{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color:  rgb(24, 22, 22);
   gap: 2rem;
-  background-color: rgb(3, 46, 46);
 
 }
 .sub input{
   border-radius: 5px;
-  padding: .8em 0;
-  width: 300px;
+  padding: 1em 0;
+  width: 750px;
+  margin-bottom: 1em;
+  padding-left: 1em;
 }
-
-
-.maked{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  
+.sub input:focus{
+  outline: none;
+}
+.sub input~:focus{
+outline: none;
 }
 .login-container{
+  box-shadow: 7px 5px 8px 8px lightgrey;
+  width:600px;
+  height:500px;
+  gap: 1em;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #42B83A;
+margin-top: 4.5em;
+
 }
-.login-container h3{
-  color: white;
+.login-container h2{
+  font-weight: bold;
+  font-size: 2rem;
   font-family: rampat one;
 }
 .sign{
@@ -394,6 +404,9 @@ margin: 1em 0;
   outline: none;
   width: 250px;
 }
+.user-info input:focus{
+  outline: none;
+}
 .password{
   display: flex;
   align-items: center;
@@ -402,6 +415,7 @@ margin: 1em 0;
   background-color: white;
   padding: .5em  0;
   margin: .8em  0;
+
 }
 
 .password input{
@@ -409,8 +423,11 @@ margin: 1em 0;
   outline: none;
   width: 250px;
 }
+.password input:focus{
+outline: none;
+}
 .log{
-  width: 250px;
+  width: 200px;
   border-radius: 5px;
   padding: .7em;
   background-color: black;
@@ -442,7 +459,7 @@ margin: 1em 0;
   text-align: center;
   font-size: 1.3rem;
   font-family: rampat one;
-  background-color: grey;
+  background-color:#42B83A;
   color: white;
 }
 .allproducts{
@@ -474,9 +491,14 @@ margin: 1em 0;
 .myparagraph{
   box-shadow: 5px 6px 5px lightgrey;
 }
+.myparagraph p{
+  margin: 1em 0;
+
+}
 .jan{
   box-shadow: 5px 4px 6px grey;
-  width: 300px;
+  width: 600px;
+  height: 400px;
   text-align: center;
 }
 
